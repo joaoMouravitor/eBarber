@@ -1,4 +1,6 @@
+import 'package:ebarber/menu.dart';
 import 'package:ebarber/models/task.dart';
+import 'package:ebarber/services.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -78,50 +80,7 @@ class HomeState extends State<Home> {
         ),
         backgroundColor: Color(0xFF0DA6DF),
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: const <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(color: Color(0xFF0DA6DF)),
-              child: Text(
-                'Olá, ',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-            ListTile(
-              title: Text(
-                'Home',
-                style: TextStyle(
-                    color: Color(0xFF0DA6DF),
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-            ListTile(
-              title: Text(
-                'Novo Agendamento',
-                style: TextStyle(
-                    color: Color(0xFF0DA6DF),
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-            ListTile(
-              title: Text(
-                'Sobre a Barbearia',
-                style: TextStyle(
-                    color: Color(0xFF0DA6DF),
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-          ],
-        ),
-      ),
+      drawer: Menu(),
       body: Column(
         children: [
           Container(
