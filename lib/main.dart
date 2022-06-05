@@ -16,6 +16,9 @@ class Main extends StatelessWidget {
       title: 'Lista de Tarefas',
       home: Home(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.light(primary: const Color(0xFF0DA6DF)),
+      ),
     );
   }
 }
