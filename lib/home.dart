@@ -122,7 +122,12 @@ class HomeState extends State<Home> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => add(),
+        onPressed: () => {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Services()),
+          )
+        },
         tooltip: 'Menu',
         child: const Icon(
           Icons.add,

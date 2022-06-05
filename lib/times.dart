@@ -133,7 +133,10 @@ class _TimesState extends State<Times> {
                       children: [
                         ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: Color(0xFF0DA6DF)),
+                              primary: Color(0xFF0DA6DF),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0)),
+                            ),
                             onPressed: () async {
                               _myDateTime = await showDatePicker(
                                   context: context,
@@ -166,6 +169,171 @@ class _TimesState extends State<Times> {
                     ),
                   ),
                   Divider(),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              OutlinedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "8:00",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF0DA6DF)),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                    side: BorderSide(
+                                      color: Color(0xFF0DA6DF),
+                                    ),
+                                    minimumSize: Size(80, 35)),
+                              ),
+                              OutlinedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "9:30",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF0DA6DF)),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                    side: BorderSide(
+                                      color: Color(0xFF0DA6DF),
+                                    ),
+                                    minimumSize: Size(80, 35)),
+                              ),
+                              OutlinedButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "11:00",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF0DA6DF)),
+                                ),
+                                style: OutlinedButton.styleFrom(
+                                    side: BorderSide(
+                                      color: Color(0xFF0DA6DF),
+                                    ),
+                                    minimumSize: Size(80, 35)),
+                              )
+                            ],
+                          ),
+                        ),
+                        Column(
+                          children: [
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text(
+                                "8:30",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF0DA6DF)),
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                  side: BorderSide(
+                                    color: Color(0xFF0DA6DF),
+                                  ),
+                                  minimumSize: Size(80, 35)),
+                            ),
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text(
+                                "10:00",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF0DA6DF)),
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                  side: BorderSide(
+                                    color: Color(0xFF0DA6DF),
+                                  ),
+                                  minimumSize: Size(80, 35)),
+                            ),
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text(
+                                "11:30",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF0DA6DF)),
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                  side: BorderSide(
+                                    color: Color(0xFF0DA6DF),
+                                  ),
+                                  minimumSize: Size(80, 35)),
+                            )
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text(
+                                "9:00",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF0DA6DF)),
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                  side: BorderSide(
+                                    color: Color(0xFF0DA6DF),
+                                  ),
+                                  minimumSize: Size(80, 35)),
+                            ),
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text(
+                                "10:30",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF0DA6DF)),
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                  side: BorderSide(
+                                    color: Color(0xFF0DA6DF),
+                                  ),
+                                  minimumSize: Size(80, 35)),
+                            ),
+                            OutlinedButton(
+                              onPressed: () {},
+                              child: Text(
+                                "13:00",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xFF0DA6DF)),
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                  side: BorderSide(
+                                    color: Color(0xFF0DA6DF),
+                                  ),
+                                  minimumSize: Size(80, 35)),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(10),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Agendar",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: Size(200, 50),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.0)),
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),

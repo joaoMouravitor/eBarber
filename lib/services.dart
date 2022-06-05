@@ -107,6 +107,40 @@ class _ServicesState extends State<Services> {
               ],
             ),
           ),
+          Container(
+            padding: EdgeInsets.only(left: 15, right: 15, bottom: 10),
+            child: ListTile(
+              title: Text(
+                "Cabelo",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF666666)),
+              ),
+              subtitle: Row(
+                children: [
+                  Text("R\$ 30,00",
+                      style: TextStyle(
+                          color: Color(0xFF0DA6DF),
+                          fontWeight: FontWeight.bold)),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("30min")
+                ],
+              ),
+              trailing: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Times()),
+                  );
+                },
+                child: Text("Agendar"),
+              ),
+            ),
+          ),
+          Divider(),
           Expanded(
             child: ListView.separated(
                 padding: const EdgeInsets.all(15),
